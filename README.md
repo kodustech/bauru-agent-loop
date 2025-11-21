@@ -15,10 +15,12 @@
 
 - Veja o roteiro: `less docs/00-roteiro.md`
 - Slides: `less docs/01-slides.md`
-- Demo (Gemini): `cd demo && npm install && GEMINI_API_KEY=... npm run demo "Pergunta"`
+- Demo (Gemini CLI): `cd demo && npm install && GEMINI_API_KEY=... npm run demo "Pergunta"`
+- Demo (HTTP server): `cd demo && GEMINI_API_KEY=... npm run server` e faça `POST http://localhost:3000/ask` com `{ "question": "..." }`
+- Mock/offline: `cd demo && MOCK=1 npm run demo "Pergunta"`
 - Diagramas (preview em texto): `less docs/03-diagramas.md`
 - Diagramas (SVG): `npx @mermaid-js/mermaid-cli -i docs/03-diagramas.md -o docs/diagrams`
 
 ## Observação
 
-- O demo roda com modelos da OpenAI ou em modo mock (`MOCK=1`) para ambientes sem chave.
+- O demo roda com Gemini 2.5 ou em modo mock (`MOCK=1`) para ambientes sem chave.

@@ -71,3 +71,9 @@ flowchart TB
 ```
 
 > Diagramas gerados: veja `docs/diagrams/fluxo1-basico.svg`, `fluxo2-tools.svg`, `fluxo3-agent-loop.svg`, `fluxo5-demo.svg`.
+
+## GIFs de apoio (referências rápidas)
+
+- Agent loop (ReAct curto): `docs/gifs/agent-loop.gif`
+- Function calling / tools: `docs/gifs/function-calling.gif`
+- MCP / integração com serviços: `docs/gifs/mcp-integration.gif`
