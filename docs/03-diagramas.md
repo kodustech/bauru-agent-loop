@@ -50,32 +50,10 @@ stateDiagram-v2
   ExecutarTool --> Consolidar
   Consolidar --> [*]
 
-  state Interpretar {
-    note right: Ler intenção\nchecar contexto disponível
-  }
-  state DecidirTool {
-    note right: Escolher tool ou responder direto\nValidar args
-  }
-  state ExecutarTool {
-    note right: Chamar tool, logar\nRetry curto em caso de erro
-  }
-  state Consolidar {
-    note right: Montar resposta final\nAnexar fontes/dados usados
-  }
-```
-
-## Fluxo 4 — Observabilidade mínima
-
-```mermaid
-flowchart LR
-  subgraph Agent
-    A[Mensagens] --> B[Tool calls]
-    B --> C[Respostas das tools]
-    C --> D[Resposta final]
-  end
-  Agent -->|Log JSONL| L[Storage]
-  L -->|Dashboard| O[(Insights)]
-  O -->|Ajustes| Agent
+  note right of Interpretar: Ler intenção<br/>checar contexto disponível
+  note right of DecidirTool: Escolher tool ou responder direto<br/>Validar args
+  note right of ExecutarTool: Chamar tool, logar<br/>Retry curto em caso de erro
+  note right of Consolidar: Montar resposta final<br/>Anexar fontes/dados usados
 ```
 
 ## Fluxo 5 — Demo `demo/src/agent-mastra-gemini.ts`
@@ -91,3 +69,5 @@ flowchart TB
   T3 --> M
   M --> R[Resposta final\nPT-BR, dados das tools]
 ```
+
+> Diagramas gerados: veja `docs/diagrams/fluxo1-basico.svg`, `fluxo2-tools.svg`, `fluxo3-agent-loop.svg`, `fluxo5-demo.svg`.

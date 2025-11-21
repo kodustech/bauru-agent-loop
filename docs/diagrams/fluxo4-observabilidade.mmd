@@ -1,9 +1,0 @@
-flowchart LR
-  subgraph Agent
-    A[Mensagens] --> B[Tool calls]
-    B --> C[Respostas das tools]
-    C --> D[Resposta final]
-  end
-  Agent -->|Log JSONL| L[Storage]
-  L -->|Dashboard| O[(Insights)]
-  O -->|Ajustes| Agent

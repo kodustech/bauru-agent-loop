@@ -43,13 +43,11 @@
 - Diagrama: veja `docs/03-diagramas.md` (Fluxo 3).
 - ![Fluxo Agent Loop](diagrams/fluxo3-agent-loop.svg)
 
-## 08 — Observabilidade
+## 08 — Observabilidade (essencial)
 
 - Logue mensagens, tool calls e duração.
 - Guarde exemplos bons/ruins para ajuste rápido.
 - Métrica básica: % de respostas que usaram tool correta.
-- Diagrama: veja `docs/03-diagramas.md` (Fluxo 4).
-- ![Fluxo Observabilidade](diagrams/fluxo4-observabilidade.svg)
 
 ## 09 — Live Code (vamos rodar)
 

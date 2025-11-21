@@ -1,9 +1,7 @@
-# Pacote de leitura pré-palestra (Agents, Tools, Contexto, Prompt, Frameworks)
+# Pacote de referências (Agents, Tools, Contexto, Prompt, Frameworks)
 
-## Como usar
-
-- Enviar com antecedência para nivelar o público.
-- Ordem sugerida: visão geral → tools/context → prompt → frameworks Python/TS.
+- Use como material de apoio; não é trilha obrigatória.
+- Agrupado por tema para consulta rápida.
 
 1. Visão geral de agents
 
@@ -100,12 +98,3 @@
   Site: https://docs.mastra.ai/  
   GitHub: https://github.com/mastra-ai/mastra  
   Tutorial introdutório: https://dev.to/haydenbleasel/creating-ai-agents-with-mastra-and-typescript-3b5h
-
-## Sugestão de trilha curta (para enviar antes)
-
-1. You Should Write An Agent (Fly.io)
-2. Agents – OpenAI + Building effective agents (Anthropic)
-3. Using tools (OpenAI) + Writing effective tools (Anthropic)
-4. Effective context engineering (Anthropic)
-5. Prompt engineering (OpenAI)
-6. Mão na massa: LangChain (Python) ou LangChain.js / Mastra (TS)
