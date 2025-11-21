@@ -1,0 +1,9 @@
+flowchart TB
+  Q["Input do usuário"] --> M["Modelo (Gemini, mock ou API)"]
+  M -->|tool_call| T1[get_agenda]
+  M -->|tool_call| T2[get_weather]
+  M -->|tool_call opcional| T3[save_note]
+  T1 --> M
+  T2 --> M
+  T3 --> M
+  M --> R["Resposta final<br/>PT-BR, dados das tools"]

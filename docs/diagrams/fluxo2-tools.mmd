@@ -1,0 +1,14 @@
+sequenceDiagram
+  participant User
+  participant Orchestrator as Orquestrador
+  participant LLM as Modelo
+  participant Tool as Tool API
+
+  User->>Orchestrator: Pedido
+  Orchestrator->>LLM: system + user + tools schema
+  LLM-->>Orchestrator: tool_calls (JSON)
+  Orchestrator->>Tool: Chamada da função
+  Tool-->>Orchestrator: Dados reais
+  Orchestrator->>LLM: Mensagem role=tool com resultado
+  LLM-->>Orchestrator: Resposta contextualizada
+  Orchestrator-->>User: Texto final

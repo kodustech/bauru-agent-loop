@@ -1,0 +1,11 @@
+node_modules
+dist
+build
+.git
+coverage
+*.log
+demo/node_modules
+demo/dist
+demo/build
+docs/exports
+docs/exports/**

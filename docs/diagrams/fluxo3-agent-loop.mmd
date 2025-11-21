@@ -1,0 +1,11 @@
+stateDiagram-v2
+  [*] --> Interpretar
+  Interpretar --> DecidirTool
+  DecidirTool --> ExecutarTool
+  ExecutarTool --> Consolidar
+  Consolidar --> [*]
+
+  note right of Interpretar: Ler intenção<br/>checar contexto disponível
+  note right of DecidirTool: Escolher tool ou responder direto<br/>Validar args
+  note right of ExecutarTool: Chamar tool, logar<br/>Retry curto em caso de erro
+  note right of Consolidar: Montar resposta final<br/>Anexar fontes/dados usados

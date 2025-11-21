@@ -1,0 +1,52 @@
+{
+    "city": "Bauru, SP",
+    "venue": "CONQ • Rua Joaquim Anacleto Bueno, 1-42 - Bauru/SP",
+    "date": "2025-11-22",
+    "slots": [
+        {
+            "time": "09:00",
+            "title": "Abertura & Workshop",
+            "desc": "Introdução a AI Agents e MCP na prática"
+        },
+        {
+            "time": "10:00",
+            "title": "Formação de Times",
+            "desc": "Monte seu time ou entre em um existente (4-5 pessoas)"
+        },
+        {
+            "time": "10:30",
+            "title": "Início do Desenvolvimento",
+            "desc": "Construa seu agent loop com suporte de mentores"
+        },
+        {
+            "time": "13:00",
+            "title": "Almoço",
+            "desc": "Alimentação e networking"
+        },
+        {
+            "time": "14:00",
+            "title": "Sprint Final",
+            "desc": "Finalize o desenvolvimento e prepare a apresentação"
+        },
+        {
+            "time": "17:00",
+            "title": "Rodada de Pitches",
+            "desc": "5 minutos para cada time"
+        },
+        {
+            "time": "18:00",
+            "title": "Julgamento & Premiação",
+            "desc": "Avaliação da banca e anúncio dos vencedores"
+        },
+        {
+            "time": "19:00",
+            "title": "Happy Hour",
+            "desc": "Bebidas e networking"
+        }
+    ],
+    "notes": [
+        "Traga notebook e carregador.",
+        "Mentores disponíveis o dia todo.",
+        "Happy hour liberado (+18 para bebidas alcoólicas)."
+    ]
+}

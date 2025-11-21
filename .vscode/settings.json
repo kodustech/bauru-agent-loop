@@ -1,0 +1,7 @@
+{
+    // Garantir que o VS Code use o Prettier da workspace e a config raiz
+    "prettier.prettierPath": "demo/node_modules/prettier",
+    "prettier.configPath": ".prettierrc",
+    // Opcional: ativar format-on-save (ajuste se não quiser)
+    "editor.formatOnSave": true
+}
