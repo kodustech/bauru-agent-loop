@@ -1,9 +1,11 @@
 // Agente Mastra + Gemini 2.5 em TypeScript.
+import 'dotenv/config';
 import { appendFile, mkdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 import { fileURLToPath } from 'node:url';
-import { Agent, Tool } from '@mastra/core';
+import { Agent } from '@mastra/core';
+import { Tool } from '@mastra/core/tools';
 import { z } from 'zod';
 
 type AgendaSlot = { time: string; title: string; desc: string };

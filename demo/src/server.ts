@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import express, { type Request, type Response } from 'express';
 import process from 'node:process';
 import { runAgent } from './agent-mastra-gemini.js';
